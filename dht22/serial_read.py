@@ -16,7 +16,7 @@ def serial_read():
     try :
         humy = float(ser_read.split()[2].strip(','))
         temp = float(ser_read.split()[3].strip(','))
-    except ValueError :
+    except (ValueError, IndexError) :
         pass # sensor fail, nothing to do
     ser.close()
     return (humy, temp, today, now)
