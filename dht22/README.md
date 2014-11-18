@@ -1,6 +1,6 @@
 dht22 sensor project
 
-# create sqlite3 table
+<= create sqlite3 table =>
 
 sqlite3 humy.db
 sqlite> BEGIN;
